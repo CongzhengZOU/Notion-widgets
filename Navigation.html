@@ -8,9 +8,9 @@
 
 	<!-- Google Font -->
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap" rel="stylesheet">
 
 	<!-------->
 
@@ -24,7 +24,7 @@
 
 
 		.navMenu {
-			font-family: 'Advent Pro', sans-serif;
+			font-family: 'Plus Jakarta Sans', sans-serif;
 			padding: 8px;
 			text-align: center;
 			margin: 7px auto;
@@ -59,17 +59,12 @@
 
 	<nav class="navMenu  border">
 		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
-		<a id="inbox" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-inbox"></i> Inbox</a>
-		<a id="week" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> Planner</a>
-		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase"></i> Projects</a>
-		<a id="tasks" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"></i> Tasks</a>
-		<a id="business" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-wave"></i> Business</a>
-		<a id="knowledge" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-lightbulb"></i> Knowledge</a>
-		<a id="topics" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-layer-group"></i> Topics</a>
-		<a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> Notes</a>
-		<a id="media" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bookmark"></i> Media</a>
-		<a id="resourses" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-wrench"></i> Resourses</a>
-		<a id="lifewiki" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Lifewiki</a>
+		<a id="Présentation" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-inbox"></i> Présentation</a>
+		<a id="Analyse_du_Site" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> Analyse_du_Site</a>
+		<a id="Analyse_du_Modèle_BIM" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase"></i> Analyse_du_Modèle_BIM</a>
+		<a id="Etude_Carbone" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"></i> Etude_Carbone</a>
+		<a id="Photovoltaique_et_BIM" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-wave"></i> Photovoltaique_et_BIM</a>
+	
 
 
 
@@ -78,7 +73,7 @@
 
 	<script>
 
-		let direction = "horizontal";
+		let direction = "vertical";
 		if (direction === "vertical") {
 			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
 		}
@@ -88,30 +83,17 @@
 
 			if (id == 'home')
 				window.open("https://example.com", '_blank').focus();
-			else if (id == "inbox")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "week")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "month")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "projects")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "business")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "tasks")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "knowledge")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "topics")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "notes")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "media")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "resourses")
-				window.open("https://example.com3", '_blank').focus();
-			else if (id == "lifewiki")
-				window.open("https://example.com", '_blank').focus();
+			else if (id == "Présentation")
+				window.open("https://www.notion.so/omnianumerique/NOUVELLE-CIT-ADMINISTRATIVE-DES-SERVICES-DE-L-TAT-TOULOUSE-31-930754b489c54812a0ca0bc0b2b7c133", '_blank').focus();
+			else if (id == "Analyse_du_Site")
+				window.open("https://www.notion.so/omnianumerique/Analyses-Environmentaux-4f9304df061f4de19f121225b70a53cf", '_blank').focus();
+			else if (id == "Analyse_du_Modèle_BIM")
+				window.open("https://www.notion.so/omnianumerique/Rapport-Interactive-fdd9a8c4b2dd4114908341c921d0533d", '_blank').focus();
+			else if (id == "Etude_Carbone")
+				window.open("https://www.notion.so/omnianumerique/Etude-Carbone-4e25d395913a4c06bfa3bb282c45e887", '_blank').focus();
+			else if (id == "Photovoltaique_et_BIM")
+				window.open("https://www.notion.so/omnianumerique/Page-vers-Photovolta-que-et-BIM-0865b2e04c024eb691a430fce40a6cbe", '_blank').focus();
+	
 
 		}
 	</script>
